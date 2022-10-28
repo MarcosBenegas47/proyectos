@@ -1,0 +1,138 @@
+:root{
+    --DarkCyan: hsl(158, 36%, 37%);
+    --VeryDarkCyan: hsl(158, 36%, 27%);
+    --Cream: hsl(30, 38%, 92%);
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --fuente1: 'Montserrat', sans-serif;;
+    --fuente2: 'Fraunces', serif;;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    background-color: var(--Cream);
+}
+.pading{
+    padding: 1rem;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: 0;
+}
+
+
+
+.informacion{
+
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+@media(min-width: 750px){
+    .contenedor{
+       
+        height: 100vh;
+    }
+}
+.card{
+    display: grid;
+    background-color: var(--White);
+    width: 95%;
+    border-radius: 2rem;
+    overflow: hidden;
+
+}
+@media(min-width: 750px){
+    .card{
+        max-width: 700px;
+
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.img{
+    width: 100%;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-image: url(/images/image-product-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+}
+@media(min-width: 750px){
+    .img{
+        height: 100%;
+        background-image: url(/images/image-product-desktop.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+.informacion{
+    padding: 3rem;
+    
+}
+
+.boton{
+    display: block;
+    background-color: var(--DarkCyan);
+    color: var(--White);
+    padding: 2rem;
+    font-size: 2rem, 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition:background-color 0.3s ease ;
+}
+.boton:hover{
+    background-color:var(--VeryDarkCyan) ;
+}
+.head{
+    color: var(--DarkGrayishBlue);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+
+.titulo{
+    font-size: 3.9rem;
+    font-family: var(--fuente2);
+    line-height: 3.7rem;
+    color: var(--VeryDarkBlue);
+}
+.descripcion{
+    color: var(--DarkGrayishBlue);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    font-family: var(--fuente2);
+}
+.precios{
+    display: flex;
+    align-items:center ;
+    gap: 2rem;
+}
+.precio{
+    font-size: 3rem;
+    color: var(--DarkCyan);
+    font-family: var(--fuente2);
+}
+.precio--anterior{
+    color: var(--DarkGrayishBlue);
+    text-decoration: line-through;
+}
+.svg{
+    padding: 0 0.7rem 0 0;
+}
